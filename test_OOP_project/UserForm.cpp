@@ -9,7 +9,7 @@ System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, Sys
 {
     User a("Andrew", "Martseniuk","2");
     Credit_card* c1 = new Credit_card(100, 1000, false);
-    Account a1(1);
+    Account a1(1, 1000);
     Order* o1 = new Order("test", 20);
     a.addAccount(a1);
     a.addOrder(o1);
@@ -25,6 +25,8 @@ System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, Sys
     {
         label3->Text = gcnew System::String("Âàøà êðåäèòíà êàðòêà äîñòóïíà äëÿ âèêîðèñòàííÿ");
     }
+    label4->Text = "Áàëàíñ âàøîãî ðàõóíêó: " + gcnew System::String((a.getAccountBal()).c_str());
+    
 }
 
 System::Void testOOPproject::UserForm::êðåäèòíàÊàðòàToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
@@ -37,5 +39,21 @@ System::Void testOOPproject::UserForm::êðåäèòíàÊàðòàToolStripMenuItem_Click(Syst
     this->button3->Enabled = true;
     this->label2->Visible = true;
     this->label3->Visible = true;
-    
+    this->label2->Enabled = true;
+    this->label3->Enabled = true;
+    this->button4->Visible = false;
+    this->button5->Visible = false;
+    this->button6->Visible = false;
+    this->label4->Visible = true;
+}
+
+System::Void testOOPproject::UserForm::ðàõóíîêToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    this->button1->Visible = false;
+    this->button2->Visible = false;
+    this->button3->Visible = false;
+    this->button4->Visible = true;
+    this->button5->Visible = true;
+    this->button6->Visible = true;
+    this->label4->Visible = true;
 }

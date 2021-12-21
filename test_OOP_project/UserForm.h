@@ -55,6 +55,10 @@ namespace testOOPproject {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Label^ label4;
 
 
 
@@ -94,6 +98,10 @@ namespace testOOPproject {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -152,6 +160,7 @@ namespace testOOPproject {
 			this->рахунокToolStripMenuItem->Name = L"рахунокToolStripMenuItem";
 			this->рахунокToolStripMenuItem->Size = System::Drawing::Size(223, 22);
 			this->рахунокToolStripMenuItem->Text = L"Рахунок";
+			this->рахунокToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::рахунокToolStripMenuItem_Click);
 			// 
 			// платежіToolStripMenuItem
 			// 
@@ -236,7 +245,7 @@ namespace testOOPproject {
 			// 
 			this->label3->AutoSize = true;
 			this->label3->Enabled = false;
-			this->label3->Location = System::Drawing::Point(41, 149);
+			this->label3->Location = System::Drawing::Point(41, 138);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(35, 13);
 			this->label3->TabIndex = 4;
@@ -276,11 +285,55 @@ namespace testOOPproject {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Visible = false;
 			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(438, 97);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(174, 23);
+			this->button4->TabIndex = 8;
+			this->button4->Text = L"Анулювати баланс";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Visible = false;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(438, 138);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(174, 23);
+			this->button5->TabIndex = 9;
+			this->button5->Text = L"Перевести кошти";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Visible = false;
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(438, 177);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(174, 36);
+			this->button6->TabIndex = 10;
+			this->button6->Text = L"Отримати реквізити";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Visible = false;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(41, 168);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(35, 13);
+			this->label4->TabIndex = 11;
+			this->label4->Text = L"label4";
+			this->label4->Visible = false;
+			// 
 			// UserForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(624, 333);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->button6);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -308,5 +361,6 @@ private: System::Void UserForm_Load(System::Object^ sender, System::EventArgs^ e
 private: System::Void вивестиБалансКредитноїКарткиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void кредитнаКартаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void рахунокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

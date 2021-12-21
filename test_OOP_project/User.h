@@ -56,6 +56,7 @@ public:
     void payFromOneAccount_ToOther(int number_of_account, int number_of_recipient, double sum);
     string getUserName();
     string getCCBal();
+    string getAccountBal();
     bool CheckMyCC();
     friend class Administrator;
    

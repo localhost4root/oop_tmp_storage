@@ -6,13 +6,13 @@ class Credit_card;
 class Order;
 class Account
 {
-	
+	double balance;
 	int number_of_account;
 	Credit_card* credit_card;
 	vector <Order*> orders;
 public:
 	int a;
-	Account( int number_of_account=0) :  number_of_account(number_of_account)
+	Account( int number_of_account=0, double balance = 0) :  number_of_account(number_of_account), balance(balance)
 	{			};
 	void addOrder(Order* order);
 	void addCredit_card(Credit_card* credit_card);

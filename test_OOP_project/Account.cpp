@@ -20,7 +20,7 @@ void Account::cancelMyAccount()
 }
 double Account::getMyBalance()
 {
-	return credit_card->balance;
+	return balance;
 }
 void Account::withdraw_money(double money)
 {

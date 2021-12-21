@@ -65,3 +65,7 @@ string User::getUserName()
 {
 	return client_j.name;
 }
+string User::getAccountBal()
+{
+	return std::to_string(accounts[0].getMyBalance());
+}
