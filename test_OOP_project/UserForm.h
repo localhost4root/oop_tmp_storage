@@ -36,9 +36,28 @@ namespace testOOPproject {
 		}
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êğåäèòíàÊàğòàToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ğàõóíîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ïëàòåæ³ToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ äîïîìîãàToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ çâîğîòí³éÄçâ³íîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ïğîÄîäàòîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ âåğñ³ÿÄîäàòêóToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ğîçğîáíèêèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ bagBountyToolStripMenuItem;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+
+
+
 	protected:
 
 	private:
@@ -56,16 +75,33 @@ namespace testOOPproject {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êğåäèòíàÊàğòàToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ğàõóíîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ïëàòåæ³ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->äîïîìîãàToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->çâîğîòí³éÄçâ³íîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ïğîÄîäàòîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->âåğñ³ÿÄîäàòêóToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ğîçğîáíèêèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->bagBountyToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(566, 9);
+			this->label1->Location = System::Drawing::Point(572, 53);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(29, 13);
 			this->label1->TabIndex = 0;
@@ -74,53 +110,192 @@ namespace testOOPproject {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(12, 9);
+			this->pictureBox1->Location = System::Drawing::Point(12, 44);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(37, 22);
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &UserForm::pictureBox1_Click);
 			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem,
+					this->äîïîìîãàToolStripMenuItem, this->ïğîÄîäàòîêToolStripMenuItem
+			});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(624, 24);
+			this->menuStrip1->TabIndex = 2;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem
+			// 
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->êğåäèòíàÊàğòàToolStripMenuItem,
+					this->ğàõóíîêToolStripMenuItem, this->ïëàòåæ³ToolStripMenuItem, this->íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem
+			});
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem->Name = L"âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem";
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem->Size = System::Drawing::Size(99, 20);
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem->Text = L"Ä³ÿ ç àêàóíòîì";
+			this->âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem_Click);
+			// 
+			// êğåäèòíàÊàğòàToolStripMenuItem
+			// 
+			this->êğåäèòíàÊàğòàToolStripMenuItem->Name = L"êğåäèòíàÊàğòàToolStripMenuItem";
+			this->êğåäèòíàÊàğòàToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->êğåäèòíàÊàğòàToolStripMenuItem->Text = L"Êğåäèòíà êàğòà";
+			this->êğåäèòíàÊàğòàToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::êğåäèòíàÊàğòàToolStripMenuItem_Click);
+			// 
+			// ğàõóíîêToolStripMenuItem
+			// 
+			this->ğàõóíîêToolStripMenuItem->Name = L"ğàõóíîêToolStripMenuItem";
+			this->ğàõóíîêToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->ğàõóíîêToolStripMenuItem->Text = L"Ğàõóíîê";
+			// 
+			// ïëàòåæ³ToolStripMenuItem
+			// 
+			this->ïëàòåæ³ToolStripMenuItem->Name = L"ïëàòåæ³ToolStripMenuItem";
+			this->ïëàòåæ³ToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->ïëàòåæ³ToolStripMenuItem->Text = L"Ïëàòåæ³";
+			// 
+			// íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem
+			// 
+			this->íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem->Name = L"íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem";
+			this->íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->íàëàøòóâàííÿÄëÿÄîäàòêóToolStripMenuItem->Text = L"Íàëàøòóâàííÿ äëÿ äîäàòêó";
+			// 
+			// äîïîìîãàToolStripMenuItem
+			// 
+			this->äîïîìîãàToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem,
+					this->çâîğîòí³éÄçâ³íîêToolStripMenuItem, this->÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem
+			});
+			this->äîïîìîãàToolStripMenuItem->Name = L"äîïîìîãàToolStripMenuItem";
+			this->äîïîìîãàToolStripMenuItem->Size = System::Drawing::Size(75, 20);
+			this->äîïîìîãàToolStripMenuItem->Text = L"Äîïîìîãà";
+			// 
+			// çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem
+			// 
+			this->çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem->Name = L"çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem";
+			this->çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem->Size = System::Drawing::Size(227, 22);
+			this->çâåğíóòèñüÄîÎïåğàòîğàToolStripMenuItem->Text = L"Â³äïîâ³ä³ íà ÷àñò³ çàïèòàííÿ";
+			// 
+			// çâîğîòí³éÄçâ³íîêToolStripMenuItem
+			// 
+			this->çâîğîòí³éÄçâ³íîêToolStripMenuItem->Name = L"çâîğîòí³éÄçâ³íîêToolStripMenuItem";
+			this->çâîğîòí³éÄçâ³íîêToolStripMenuItem->Size = System::Drawing::Size(227, 22);
+			this->çâîğîòí³éÄçâ³íîêToolStripMenuItem->Text = L"Çâîğîòí³é äçâ³íîê";
+			// 
+			// ÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem
+			// 
+			this->÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem->Name = L"÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem";
+			this->÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem->Size = System::Drawing::Size(227, 22);
+			this->÷àòÇÀäì³í³ñòğàòîğîìToolStripMenuItem->Text = L"×àò ç àäì³í³ñòğàòîğîì";
+			// 
+			// ïğîÄîäàòîêToolStripMenuItem
+			// 
+			this->ïğîÄîäàòîêToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->âåğñ³ÿÄîäàòêóToolStripMenuItem,
+					this->ğîçğîáíèêèToolStripMenuItem, this->bagBountyToolStripMenuItem
+			});
+			this->ïğîÄîäàòîêToolStripMenuItem->Name = L"ïğîÄîäàòîêToolStripMenuItem";
+			this->ïğîÄîäàòîêToolStripMenuItem->Size = System::Drawing::Size(88, 20);
+			this->ïğîÄîäàòîêToolStripMenuItem->Text = L"Ïğî äîäàòîê";
+			// 
+			// âåğñ³ÿÄîäàòêóToolStripMenuItem
+			// 
+			this->âåğñ³ÿÄîäàòêóToolStripMenuItem->Name = L"âåğñ³ÿÄîäàòêóToolStripMenuItem";
+			this->âåğñ³ÿÄîäàòêóToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->âåğñ³ÿÄîäàòêóToolStripMenuItem->Text = L"Âåğñ³ÿ äîäàòêó";
+			// 
+			// ğîçğîáíèêèToolStripMenuItem
+			// 
+			this->ğîçğîáíèêèToolStripMenuItem->Name = L"ğîçğîáíèêèToolStripMenuItem";
+			this->ğîçğîáíèêèToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->ğîçğîáíèêèToolStripMenuItem->Text = L"Ğîçğîáíèêè";
+			// 
+			// bagBountyToolStripMenuItem
+			// 
+			this->bagBountyToolStripMenuItem->Name = L"bagBountyToolStripMenuItem";
+			this->bagBountyToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->bagBountyToolStripMenuItem->Text = L"BagBounty";
+			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(75, 55);
+			this->label2->Enabled = false;
+			this->label2->Location = System::Drawing::Point(41, 107);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(35, 13);
-			this->label2->TabIndex = 2;
+			this->label2->TabIndex = 3;
 			this->label2->Text = L"label2";
+			this->label2->Visible = false;
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(75, 118);
+			this->label3->Enabled = false;
+			this->label3->Location = System::Drawing::Point(41, 149);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(35, 13);
-			this->label3->TabIndex = 3;
+			this->label3->TabIndex = 4;
 			this->label3->Text = L"label3";
+			this->label3->Visible = false;
 			// 
-			// label4
+			// button1
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(75, 179);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(35, 13);
-			this->label4->TabIndex = 4;
-			this->label4->Text = L"label4";
+			this->button1->Enabled = false;
+			this->button1->Location = System::Drawing::Point(438, 97);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(174, 23);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"Ğîçáëîêóâàòè êğåäèòíó êàğòêó";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Visible = false;
+			// 
+			// button2
+			// 
+			this->button2->Enabled = false;
+			this->button2->Location = System::Drawing::Point(438, 138);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(174, 23);
+			this->button2->TabIndex = 6;
+			this->button2->Text = L"Ïîãàñèòè çàáîğãîâàíí³ñòü";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Visible = false;
+			// 
+			// button3
+			// 
+			this->button3->Enabled = false;
+			this->button3->Location = System::Drawing::Point(438, 177);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(174, 36);
+			this->button3->TabIndex = 7;
+			this->button3->Text = L"Ïåğåğàõóâàòè êîøòè íà îñîáèñòèé ğàõóíîê";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Visible = false;
 			// 
 			// UserForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(624, 333);
-			this->Controls->Add(this->label4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"UserForm";
 			this->Text = L"UserForm";
+			this->Load += gcnew System::EventHandler(this, &UserForm::UserForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -129,5 +304,9 @@ namespace testOOPproject {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void UserForm_Load(System::Object^ sender, System::EventArgs^ e);
+private: System::Void âèâåñòèÁàëàíñÊğåäèòíî¿ÊàğòêèToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void êğåäèòíàÊàğòàToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

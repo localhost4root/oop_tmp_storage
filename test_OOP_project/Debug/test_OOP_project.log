@@ -1,6 +1,4 @@
-﻿  Auth.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Auth.cpp(9,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  UserForm.cpp
-  Создание кода...
-  AdminForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+﻿  UserForm.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+  Account.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   test_OOP_project.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\Debug\test_OOP_project.exe

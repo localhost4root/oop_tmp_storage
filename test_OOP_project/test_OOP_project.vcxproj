@@ -113,21 +113,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="AdminForm.cpp" />
+    <ClCompile Include="Administrator.cpp" />
     <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="Credit_card.cpp" />
+    <ClCompile Include="Junior_client.cpp" />
+    <ClCompile Include="Order.cpp" />
     <ClCompile Include="Payment.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Retirement_client.cpp" />
+    <ClCompile Include="User.cpp" />
     <ClCompile Include="UserForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
     <ClInclude Include="AdminForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Administrator.h" />
     <ClInclude Include="Auth.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Credit_card.h" />
+    <ClInclude Include="Junior_client.h" />
+    <ClInclude Include="Order.h" />
     <ClInclude Include="Payment.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Retirement_client.h" />
+    <ClInclude Include="User.h" />
     <ClInclude Include="UserForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
