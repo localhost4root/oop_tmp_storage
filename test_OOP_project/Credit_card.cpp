@@ -27,12 +27,26 @@ string Credit_card::getMyCCBalance()
 	return std::to_string(balance);
 }
 
+void Credit_card::withdrawMoney(double sum)
+{
+	balance -= sum;
+}
+
 bool Credit_card::checkCC()
 {
 	if (balance > limit)
 		return true;
 	else
 		return false;
+}
+void Credit_card::payToCC(double sum)
+{
+	balance += (int)round(sum);
+	
+}
+double Credit_card::getLimit()
+{
+	return limit;
 }
 std::ostream& operator<< (std::ostream& out, const Credit_card& n)
 {

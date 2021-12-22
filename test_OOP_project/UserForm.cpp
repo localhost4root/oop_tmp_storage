@@ -1,5 +1,6 @@
 #include "UserForm.h"
 #include "User.h"
+static User a("Andrew", "Martseniuk", "2");
 System::Void testOOPproject::UserForm::pictureBox1_Click(System::Object^ sender, System::EventArgs^ e)
 {
     Application::Exit();
@@ -7,7 +8,7 @@ System::Void testOOPproject::UserForm::pictureBox1_Click(System::Object^ sender,
 
 System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, System::EventArgs^ e)
 {
-    User a("Andrew", "Martseniuk","2");
+   
     Credit_card* c1 = new Credit_card(100, 1000, false);
     Account a1(1, 1000);
     Order* o1 = new Order("test", 20);
@@ -45,6 +46,7 @@ System::Void testOOPproject::UserForm::кредитнаКартаToolStripMenuItem_Click(Syst
     this->button5->Visible = false;
     this->button6->Visible = false;
     this->label4->Visible = true;
+    
 }
 
 System::Void testOOPproject::UserForm::рахунокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
@@ -56,4 +58,65 @@ System::Void testOOPproject::UserForm::рахунокToolStripMenuItem_Click(System::Ob
     this->button5->Visible = true;
     this->button6->Visible = true;
     this->label4->Visible = true;
+}
+
+System::Void testOOPproject::UserForm::button4_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    a.ResetBalance();
+    label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+}
+
+System::Void testOOPproject::UserForm::button5_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    if (a.Payment(100))
+    {
+        MessageBox::Show( "Successfull", "Payment");
+        label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+    }
+    else
+    {
+        MessageBox::Show("Not successfull", "Payment" );
+    }
+}
+
+System::Void testOOPproject::UserForm::button6_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    MessageBox::Show(gcnew System::String(a.getPaymentsData().c_str()), "Your number of account: ");
+}
+
+System::Void testOOPproject::UserForm::button1_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    a.BlockUnblockCC();
+    label3->Text = gcnew System::String("Ваша кредитна картка не доступна для використання");
+}
+
+System::Void testOOPproject::UserForm::button2_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    if (a.payToCC(100))
+    {
+        MessageBox::Show("You succesfully payed money to your credit card", "Successfull");
+        label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+        label2->Text = "Баланс Вашої кредитної карти: " + gcnew System::String((a.getCCBal()).c_str());
+    }
+    else
+    {
+        MessageBox::Show("Not enough money", "Payment");
+    }
+}
+
+System::Void testOOPproject::UserForm::button3_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    if ((stoi(a.getCCBal())) - 100 <a.getCCLImit() )
+    {
+        a.withdrawMoneYCC(100);
+        a.addMoneyAccount(100);
+        MessageBox::Show("You succesfully payed money from your credit card", "Successfull");
+        label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+        label2->Text = "Баланс Вашої кредитної карти: " + gcnew System::String((a.getCCBal()).c_str());
+
+    }
+    else
+    {
+        MessageBox::Show("Your payment was not succesfull(Credit limit)", "Payment");
+    }
 }

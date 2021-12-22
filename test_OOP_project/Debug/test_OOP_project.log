@@ -1,6 +1,18 @@
 ﻿  Account.cpp
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
-C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Account.cpp(27,31): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Account.cpp(31,31): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Administrator.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Administrator.cpp(15,11): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Administrator.cpp(38,40): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Credit_card.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Credit_card.cpp(32,16): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+  Order.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+  User.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+  UserForm.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
+  Создание кода...
   Account.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   test_OOP_project.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\Debug\test_OOP_project.exe

@@ -23,7 +23,10 @@ public:
 	void addAccount(Account* account);
 	void blockCC();
 	bool checkCC();
+	void payToCC(double sum);
+	double getLimit();
 	string getMyCCBalance();
+	void withdrawMoney(double sum);
 	friend class Order;
 	friend class Account;
 

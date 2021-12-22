@@ -22,7 +22,8 @@ public:
 	void withdraw_money(double money);
 	
 	void add_money(double money);
-	
+	string getNumber_of_Account();
+
 	friend class Credit_card;
 	double get_number_of_account()
 	{

@@ -15,8 +15,7 @@ void Account::printMyBalance()
 }
 void Account::cancelMyAccount()
 {
-	credit_card->balance = 0;
-	cout << "All your funds have been successfully donated to charity: " << endl;
+	balance = 0;
 }
 double Account::getMyBalance()
 {
@@ -24,9 +23,14 @@ double Account::getMyBalance()
 }
 void Account::withdraw_money(double money)
 {
-	credit_card->balance -= money;
+	balance -= money;
 }
 void Account::add_money(double money)
 {
-	credit_card->balance += money;
+	balance += money;
+}
+
+string Account::getNumber_of_Account()
+{
+	return std::to_string(number_of_account);
 }

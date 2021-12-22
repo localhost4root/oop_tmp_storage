@@ -259,9 +259,10 @@ namespace testOOPproject {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(174, 23);
 			this->button1->TabIndex = 5;
-			this->button1->Text = L"Розблокувати кредитну картку";
+			this->button1->Text = L"Заблокувати кредитну картку";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Visible = false;
+			this->button1->Click += gcnew System::EventHandler(this, &UserForm::button1_Click);
 			// 
 			// button2
 			// 
@@ -273,6 +274,7 @@ namespace testOOPproject {
 			this->button2->Text = L"Погасити заборгованність";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Visible = false;
+			this->button2->Click += gcnew System::EventHandler(this, &UserForm::button2_Click);
 			// 
 			// button3
 			// 
@@ -284,6 +286,7 @@ namespace testOOPproject {
 			this->button3->Text = L"Перерахувати кошти на особистий рахунок";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Visible = false;
+			this->button3->Click += gcnew System::EventHandler(this, &UserForm::button3_Click);
 			// 
 			// button4
 			// 
@@ -294,6 +297,7 @@ namespace testOOPproject {
 			this->button4->Text = L"Анулювати баланс";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Visible = false;
+			this->button4->Click += gcnew System::EventHandler(this, &UserForm::button4_Click);
 			// 
 			// button5
 			// 
@@ -304,6 +308,7 @@ namespace testOOPproject {
 			this->button5->Text = L"Перевести кошти";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Visible = false;
+			this->button5->Click += gcnew System::EventHandler(this, &UserForm::button5_Click);
 			// 
 			// button6
 			// 
@@ -314,6 +319,7 @@ namespace testOOPproject {
 			this->button6->Text = L"Отримати реквізити";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Visible = false;
+			this->button6->Click += gcnew System::EventHandler(this, &UserForm::button6_Click);
 			// 
 			// label4
 			// 
@@ -362,5 +368,11 @@ private: System::Void вивестиБалансКредитноїКарткиToolStripMenuItem_Click(System
 }
 private: System::Void кредитнаКартаToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void рахунокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

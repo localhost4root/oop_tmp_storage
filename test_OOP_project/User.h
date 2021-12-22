@@ -57,7 +57,17 @@ public:
     string getUserName();
     string getCCBal();
     string getAccountBal();
+    void ResetBalance();
     bool CheckMyCC();
+    bool Payment(double sum);
+    void BlockUnblockCC();
+    bool payToCC(double sum);
+    double getCCLImit();
+    void withdrawMoneYCC(double sum);
+    void addMoneyAccount(double sum);
+    string getPaymentsData();
+    
+
     friend class Administrator;
    
 };

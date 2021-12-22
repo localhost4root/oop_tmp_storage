@@ -30,6 +30,53 @@ bool User::CheckMyCC()
 {
 	return CC[0].checkCC();
 }
+bool User::Payment(double sum)
+{
+	if (accounts[0].getMyBalance() - sum < 0)
+	{
+		return 0;
+	}
+	else
+		accounts[0].withdraw_money(sum);
+	return 1;
+}
+void User::BlockUnblockCC()
+{
+	CC[0].blockCC();
+}
+bool User::payToCC(double sum)
+{
+	
+	if (accounts[0].getMyBalance() - sum < 0)
+	{
+		return 0;
+	}
+	else
+	{
+		CC[0].payToCC(sum);
+		accounts[0].withdraw_money(sum);
+		return 1;
+	}
+	
+}
+double User::getCCLImit()
+{
+	return CC[0].getLimit();
+}
+void User::withdrawMoneYCC(double sum)
+{
+	CC[0].withdrawMoney(sum);
+}
+void User::addMoneyAccount(double sum)
+{
+	accounts[0].add_money(sum);
+}
+string User::getPaymentsData()
+{
+	
+		return accounts[0].getNumber_of_Account();
+	
+}
 //void User::dumpData()
 //{
 //	int i = 0;
@@ -68,4 +115,9 @@ string User::getUserName()
 string User::getAccountBal()
 {
 	return std::to_string(accounts[0].getMyBalance());
+}
+
+void User::ResetBalance()
+{
+	accounts[0].cancelMyAccount();
 }
