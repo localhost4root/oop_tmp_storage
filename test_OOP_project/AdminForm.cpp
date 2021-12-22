@@ -23,6 +23,8 @@ System::Void testOOPproject::AdminForm::AdminForm_Load(System::Object^ sender, S
     a.addCredit_card(*c1);
     o1->set_Credit_card(c1);
     label1->Text = gcnew System::String(admin.getName().c_str());
+    this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+
     
 
 }
@@ -65,4 +67,9 @@ System::Void testOOPproject::AdminForm::button7_Click(System::Object^ sender, Sy
 {
     admin.withdraw(100);
     MessageBox::Show("Кошти успішно зняті з рахунку", "Bank system");
+}
+
+System::Void testOOPproject::AdminForm::pictureBox2_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    
 }

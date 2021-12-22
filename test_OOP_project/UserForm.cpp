@@ -29,6 +29,7 @@ System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, Sys
     label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
     this->label6->Text = gcnew System::String(o1->getNameOrder().c_str());
     this->label7->Text = gcnew System::String((o1->getOrderPrice()).ToString());
+    this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
     
 }
 
