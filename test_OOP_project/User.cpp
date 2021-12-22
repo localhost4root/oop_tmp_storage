@@ -1,5 +1,6 @@
 #include "User.h"
 #include "Account.h"
+#include "Administrator.h"
 #include <vector>
 #include <fstream>
 #include <iomanip>
@@ -81,22 +82,29 @@ string User::getPaymentsData()
 		return accounts[0].getNumber_of_Account();
 	
 }
-//void User::dumpData()
-//{
-//	int i = 0;
-//	ofstream DATA("Information.txt");
-//	DATA << "Name and surname: " << name << setw(3) << surname << endl;
-//	DATA << "With identification number: " << identification_number<< endl ;
-//	
-//	while (i < (accounts.size()))
-//	{
-//		DATA << "User account #" << i + 1 << endl;
-//		DATA <<"Balance: " << accounts[i].getMyBalance() << endl;
-//		i++;
-//	}
-//	DATA.close();
-//	cout << "Successfully dumped!" << endl;
-//}
+void User::dumpData()
+{
+	int i = 0;
+	ofstream DATA("Information.txt");
+	DATA << "Name and surname: " << client_j.name << "  " << client_j.surname << endl;
+	DATA << "With identification number: " << client_j.identification_number<< endl ;
+	
+	while (i < (accounts.size()))
+	{
+		DATA << "User account #" << i + 1 << endl;
+		DATA <<"Balance of account: " << accounts[i].getMyBalance() << endl;
+		
+		i++;
+	}
+	i = 0;
+	while (i < (CC.size()))
+	{
+		DATA << "Balance of credit card: " << CC[i].getMyCCBalance() << "  with credit limit: " << CC[i].getLimit() << endl;
+		i++;
+	}
+	DATA.close();
+
+}
 void User::payFromOneAccount_ToOther(int number_of_sender, int number_of_recipient, double sum)
 {
 	if (accounts[number_of_sender-1].getMyBalance() - sum < 0)

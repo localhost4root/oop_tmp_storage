@@ -1,6 +1,8 @@
 #include "Administrator.h"
-
-
+#include "Account.h"
+#include "User.h"
+using namespace System;
+using namespace System::Windows::Forms;
 void Administrator::addUser(User* user)
 {
 	users.push_back(user);
@@ -17,29 +19,43 @@ void Administrator::checkUserCC()
 		if (user_credit_cards[i]->checkCC())
 		{
 			user_credit_cards[i]->blockCC();
-			cout << "Credit card #" << i << " was blocked"<< endl;
+			MessageBox::Show("Credit card #" + i.ToString() + "was blocked", "Bank system");
 		}
 			i++;
 	}
+	MessageBox::Show("Credit cards were checked!", "Bank system");
 }
-void Administrator::createAccount_for_user(int user_number)
+//void Administrator::addNewAccount(Account new_acc)
+//{
+//
+//}
+void Administrator::createAccount_for_user(Account new_account)
 {
-	int  id = 0;
-	double sum, limit;
-	cout << "Input id of bank account: ";
-	cin >> id;
-	cout << endl;
-	cout << "Input sum wich payed user: ";
-	cin >> sum;
-	cout << endl;
-	cout << "Input limit for that credit card: ";
-	cout << endl;
-	cin >> limit;
-	Credit_card *new_CC = new Credit_card(sum, limit, false);
-	Account new_account(id);
-	
-	new_account.addCredit_card(new_CC);
-	users[user_number]->addAccount(new_account);
-	
-	cout << "Successfully created!" << endl;
+	users[0]->addAccount(new_account);
+}
+
+void Administrator::clear_balance_of_user()
+{
+	users[0]->ResetBalance();
+}
+
+void Administrator::addMoney(double sum)
+{
+	users[0]->addMoneyAccount(sum);
+}
+
+void Administrator::withdraw(double sum)
+{
+	users[0]->Payment(sum);
+}
+
+void Administrator::dumpUserData()
+{
+	users[0]->dumpData();
+	MessageBox::Show("Інформація успішно збережена!", "Bank system");
+}
+
+string Administrator::getName()
+{
+	return name;
 }

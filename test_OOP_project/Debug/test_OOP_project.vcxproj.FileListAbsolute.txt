@@ -1,5 +1,4 @@
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\test_OOP_project.vcxprojAssemblyReference.cache
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.AdminForm.resources
-C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.Payment.resources
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.UserForm.resources
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\test_OOP_project.vcxproj.GenerateResource.cache

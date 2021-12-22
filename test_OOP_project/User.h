@@ -52,7 +52,7 @@ public:
     void addAdministrator(Administrator* administrator);
     void addAccount(Account account);
     void addCredit_card(Credit_card Cred);
-   /* void dumpData();*/
+    void dumpData();
     void payFromOneAccount_ToOther(int number_of_account, int number_of_recipient, double sum);
     string getUserName();
     string getCCBal();

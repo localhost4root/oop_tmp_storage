@@ -24,9 +24,6 @@
     <ClCompile Include="AdminForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Payment.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Account.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -61,9 +58,6 @@
     </ClInclude>
     <ClInclude Include="AdminForm.h">
       <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Payment.h">
-      <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Account.h">
       <Filter>Файлы заголовков</Filter>

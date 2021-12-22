@@ -1,6 +1,7 @@
-Name and surname: John DD
-With identification number: 18
+Name and surname: Andrew  Martseniuk
+With identification number: Null
 User account #1
-Balance: 100
+Balance of account: 0
 User account #2
-Balance: 1000
+Balance of account: 10000
+Balance of credit card: 100  with credit limit: 1000

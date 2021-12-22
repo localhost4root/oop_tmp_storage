@@ -1,5 +1,4 @@
   testOOPproject.AdminForm.resources - Embedded, ContainedInManifestFile, 
-  testOOPproject.Payment.resources - Embedded, ContainedInManifestFile, 
   testOOPproject.UserForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly test_OOP_project, Version=0.0.*, Culture=Инвариантный язык (Инвариантная страна): 
@@ -23,8 +22,5 @@ Class testOOPproject.UserForm: AutoLayout, AnsiClass, Class, Public, BeforeField
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class testOOPproject.Auth: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class testOOPproject.Payment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

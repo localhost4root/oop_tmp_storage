@@ -14,6 +14,7 @@ public:
 	int a;
 	Account( int number_of_account=0, double balance = 0) :  number_of_account(number_of_account), balance(balance)
 	{			};
+	Account() {};
 	void addOrder(Order* order);
 	void addCredit_card(Credit_card* credit_card);
 	void printMyBalance();
