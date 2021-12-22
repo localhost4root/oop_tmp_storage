@@ -16,6 +16,8 @@ public:
 	{		};
 	void payFromCreditCard();
 	void set_Credit_card(Credit_card* credit_card);
+	string getNameOrder();
+	int getOrderPrice();
 	
 	friend class Credit_card;
 };

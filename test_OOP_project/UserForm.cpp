@@ -11,7 +11,7 @@ System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, Sys
    
     Credit_card* c1 = new Credit_card(100, 1000, false);
     Account a1(1, 1000);
-    Order* o1 = new Order("test", 20);
+    Order* o1 = new Order("test", 200);
     a.addAccount(a1);
     a.addOrder(o1);
     a.addCredit_card(*c1);
@@ -27,6 +27,8 @@ System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, Sys
         label3->Text = gcnew System::String("Ваша кредитна картка доступна для використання");
     }
     label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+    this->label6->Text = gcnew System::String(o1->getNameOrder().c_str());
+    this->label7->Text = gcnew System::String((o1->getOrderPrice()).ToString());
     
 }
 
@@ -46,6 +48,10 @@ System::Void testOOPproject::UserForm::кредитнаКартаToolStripMenuItem_Click(Syst
     this->button5->Visible = false;
     this->button6->Visible = false;
     this->label4->Visible = true;
+    this->button7->Visible = false;
+    this->label5->Visible = false;
+    this->label6->Visible = false;
+    this->label7->Visible = false;
     
 }
 
@@ -58,6 +64,10 @@ System::Void testOOPproject::UserForm::рахунокToolStripMenuItem_Click(System::Ob
     this->button5->Visible = true;
     this->button6->Visible = true;
     this->label4->Visible = true;
+    this->button7->Visible = false;
+    this->label5->Visible = false;
+    this->label6->Visible = false;
+    this->label7->Visible = false;
 }
 
 System::Void testOOPproject::UserForm::button4_Click(System::Object^ sender, System::EventArgs^ e)
@@ -106,7 +116,7 @@ System::Void testOOPproject::UserForm::button2_Click(System::Object^ sender, Sys
 
 System::Void testOOPproject::UserForm::button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    if ((stoi(a.getCCBal())) - 100 <a.getCCLImit() )
+    if (abs((stoi((a.getCCBal()))) - 100 )!=a.getCCLImit())
     {
         a.withdrawMoneYCC(100);
         a.addMoneyAccount(100);
@@ -118,5 +128,37 @@ System::Void testOOPproject::UserForm::button3_Click(System::Object^ sender, Sys
     else
     {
         MessageBox::Show("Your payment was not succesfull(Credit limit)", "Payment");
+    }
+}
+
+System::Void testOOPproject::UserForm::платежіToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    this->button7->Visible = true;
+    this->label5->Visible = true;
+    this->label6->Visible = true;
+    this->label7->Visible = true;
+    this->button1->Visible = false;
+    this->button2->Visible = false;
+    this->button3->Visible = false;
+    this->label2->Visible = false;
+    this->label3->Visible = false;
+    this->button4->Visible = false;
+    this->button5->Visible = false;
+    this->button6->Visible = false;
+    this->label4->Visible = false;
+}
+
+System::Void testOOPproject::UserForm::button7_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    if (a.getOrderPrice() > stoi(a.getAccountBal()))
+    {
+        MessageBox::Show("Not enough money to pay your order", "Order");
+    }
+    else
+    {
+        MessageBox::Show("Succesfully payed", "Order");
+        a.Payment(a.getOrderPrice());
+        label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+
     }
 }

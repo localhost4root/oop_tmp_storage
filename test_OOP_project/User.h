@@ -65,6 +65,7 @@ public:
     double getCCLImit();
     void withdrawMoneYCC(double sum);
     void addMoneyAccount(double sum);
+    int getOrderPrice();
     string getPaymentsData();
     
 

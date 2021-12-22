@@ -3,6 +3,14 @@ void Order::set_Credit_card(Credit_card* credit_card)
 {
 	this->credit_card = credit_card;
 }
+string Order::getNameOrder()
+{
+	return order_name;
+}
+int Order::getOrderPrice()
+{
+	return order_price;
+}
 void Order::payFromCreditCard()
 {
 	if (!(credit_card->is_my_CC_blocked))

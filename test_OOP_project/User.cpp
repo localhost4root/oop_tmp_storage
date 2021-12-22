@@ -71,6 +71,10 @@ void User::addMoneyAccount(double sum)
 {
 	accounts[0].add_money(sum);
 }
+int User::getOrderPrice()
+{
+	return orders[0]->getOrderPrice();
+}
 string User::getPaymentsData()
 {
 	
