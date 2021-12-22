@@ -125,7 +125,7 @@ namespace testOOPproject {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->label1->Location = System::Drawing::Point(517, 44);
+			this->label1->Location = System::Drawing::Point(500, 44);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(38, 17);
 			this->label1->TabIndex = 0;
@@ -137,7 +137,7 @@ namespace testOOPproject {
 			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->pictureBox1->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\exit"
 				L"_icon.jpg";
-			this->pictureBox1->Location = System::Drawing::Point(0, 44);
+			this->pictureBox1->Location = System::Drawing::Point(9, 44);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(0);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(35, 29);

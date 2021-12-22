@@ -155,6 +155,9 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.h</DependentUpon>
     </EmbeddedResource>

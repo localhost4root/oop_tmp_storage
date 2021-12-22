@@ -12,3 +12,8 @@ void main(array<String^>^ args)
 	testOOPproject::Auth form;
 	Application::Run(% form);
 }
+
+System::Void testOOPproject::Auth::pictureBox1_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	Application::Exit();
+}
