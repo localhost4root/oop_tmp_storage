@@ -118,6 +118,7 @@
     <ClCompile Include="Administrator.cpp" />
     <ClCompile Include="Auth.cpp" />
     <ClCompile Include="Credit_card.cpp" />
+    <ClCompile Include="HelpInfo.cpp" />
     <ClCompile Include="Junior_client.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="Person.cpp" />
@@ -135,6 +136,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Credit_card.h" />
+    <ClInclude Include="HelpInfo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Junior_client.h" />
     <ClInclude Include="Order.h" />
     <ClInclude Include="Person.h" />
@@ -157,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpInfo.resx">
+      <DependentUpon>HelpInfo.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.h</DependentUpon>

@@ -1,9 +1,11 @@
 #include "UserForm.h"
 #include "User.h"
+#include "HelpInfo.h"
 static User a("Andrew", "Martseniuk", "2");
 System::Void testOOPproject::UserForm::pictureBox1_Click(System::Object^ sender, System::EventArgs^ e)
 {
     Application::Exit();
+    
 }
 
 System::Void testOOPproject::UserForm::UserForm_Load(System::Object^ sender, System::EventArgs^ e)
@@ -53,6 +55,7 @@ System::Void testOOPproject::UserForm::êğåäèòíàÊàğòàToolStripMenuItem_Click(Syst
     this->label5->Visible = false;
     this->label6->Visible = false;
     this->label7->Visible = false;
+    this->pictureBox4->Visible = false;
     
 }
 
@@ -68,6 +71,7 @@ System::Void testOOPproject::UserForm::ğàõóíîêToolStripMenuItem_Click(System::Ob
     this->button7->Visible = false;
     this->label5->Visible = false;
     this->label6->Visible = false;
+    this->pictureBox4->Visible = false;
     this->label7->Visible = false;
 }
 
@@ -147,6 +151,7 @@ System::Void testOOPproject::UserForm::ïëàòåæ³ToolStripMenuItem_Click(System::Ob
     this->button5->Visible = false;
     this->button6->Visible = false;
     this->label4->Visible = false;
+    this->pictureBox4->Visible = false;
 }
 
 System::Void testOOPproject::UserForm::button7_Click(System::Object^ sender, System::EventArgs^ e)
@@ -162,4 +167,11 @@ System::Void testOOPproject::UserForm::button7_Click(System::Object^ sender, Sys
         label4->Text = "Áàëàíñ âàøîãî ğàõóíêó: " + gcnew System::String((a.getAccountBal()).c_str());
 
     }
+}
+
+System::Void testOOPproject::UserForm::pictureBox2_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    HelpInfo^ info = gcnew HelpInfo();
+    info->Show();
+    this->Hide();
 }

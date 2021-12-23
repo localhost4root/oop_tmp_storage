@@ -41,7 +41,7 @@ namespace testOOPproject {
 	private: System::Windows::Forms::ToolStripMenuItem^ ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ ‡ıÛÌÓÍToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ ÔÎ‡ÚÂÊ≥ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem;
+
 	private: System::Windows::Forms::ToolStripMenuItem^ ‰ÓÔÓÏÓ„‡ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ Á‚ÂÌÛÚËÒ¸ƒÓŒÔÂ‡ÚÓ‡ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ Á‚ÓÓÚÌ≥ÈƒÁ‚≥ÌÓÍToolStripMenuItem;
@@ -65,6 +65,7 @@ namespace testOOPproject {
 	private: System::Windows::Forms::Button^ button7;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
 
 
 
@@ -91,7 +92,6 @@ namespace testOOPproject {
 			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->‡ıÛÌÓÍToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->‰ÓÔÓÏÓ„‡ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Á‚ÂÌÛÚËÒ¸ƒÓŒÔÂ‡ÚÓ‡ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->Á‚ÓÓÚÌ≥ÈƒÁ‚≥ÌÓÍToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -115,10 +115,12 @@ namespace testOOPproject {
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->menuStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -159,9 +161,9 @@ namespace testOOPproject {
 			// 
 			// ‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem
 			// 
-			this->‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+			this->‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem,
-					this->‡ıÛÌÓÍToolStripMenuItem, this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem, this->Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem
+					this->‡ıÛÌÓÍToolStripMenuItem, this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem
 			});
 			this->‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem->Name = L"‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem";
 			this->‚Ë‚ÂÒÚË¡‡Î‡ÌÒ Â‰ËÚÌÓø ‡ÚÍËToolStripMenuItem->Size = System::Drawing::Size(99, 20);
@@ -171,29 +173,23 @@ namespace testOOPproject {
 			// ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem
 			// 
 			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem->Name = L"ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem";
-			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem->Size = System::Drawing::Size(195, 22);
 			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem->Text = L" Â‰ËÚÌ‡ Í‡Ú‡";
 			this->ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::ÍÂ‰ËÚÌ‡ ‡Ú‡ToolStripMenuItem_Click);
 			// 
 			// ‡ıÛÌÓÍToolStripMenuItem
 			// 
 			this->‡ıÛÌÓÍToolStripMenuItem->Name = L"‡ıÛÌÓÍToolStripMenuItem";
-			this->‡ıÛÌÓÍToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->‡ıÛÌÓÍToolStripMenuItem->Size = System::Drawing::Size(195, 22);
 			this->‡ıÛÌÓÍToolStripMenuItem->Text = L"–‡ıÛÌÓÍ";
 			this->‡ıÛÌÓÍToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::‡ıÛÌÓÍToolStripMenuItem_Click);
 			// 
 			// ÔÎ‡ÚÂÊ≥ToolStripMenuItem
 			// 
 			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem->Name = L"ÔÎ‡ÚÂÊ≥ToolStripMenuItem";
-			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem->Size = System::Drawing::Size(223, 22);
+			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem->Size = System::Drawing::Size(195, 22);
 			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem->Text = L"—ÔÎ‡ÚËÚË Á‡ÏÓ‚ÎÂÌÌˇ";
 			this->ÔÎ‡ÚÂÊ≥ToolStripMenuItem->Click += gcnew System::EventHandler(this, &UserForm::ÔÎ‡ÚÂÊ≥ToolStripMenuItem_Click);
-			// 
-			// Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem
-			// 
-			this->Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem->Name = L"Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem";
-			this->Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem->Size = System::Drawing::Size(223, 22);
-			this->Ì‡Î‡¯ÚÛ‚‡ÌÌˇƒÎˇƒÓ‰‡ÚÍÛToolStripMenuItem->Text = L"Õ‡Î‡¯ÚÛ‚‡ÌÌˇ ‰Îˇ ‰Ó‰‡ÚÍÛ";
 			// 
 			// ‰ÓÔÓÏÓ„‡ToolStripMenuItem
 			// 
@@ -253,6 +249,8 @@ namespace testOOPproject {
 			// 
 			// label2
 			// 
+			this->label2->BackColor = System::Drawing::SystemColors::ButtonFace;
+			this->label2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label2->Enabled = false;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9));
 			this->label2->Location = System::Drawing::Point(12, 107);
@@ -265,6 +263,8 @@ namespace testOOPproject {
 			// 
 			// label3
 			// 
+			this->label3->BackColor = System::Drawing::SystemColors::ButtonFace;
+			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label3->Enabled = false;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9));
 			this->label3->Location = System::Drawing::Point(12, 150);
@@ -280,7 +280,7 @@ namespace testOOPproject {
 			this->button1->Enabled = false;
 			this->button1->Location = System::Drawing::Point(381, 89);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(189, 33);
+			this->button1->Size = System::Drawing::Size(189, 43);
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"«‡·ÎÓÍÛ‚‡ÚË ÍÂ‰ËÚÌÛ Í‡ÚÍÛ";
 			this->button1->UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@ namespace testOOPproject {
 			this->button2->Enabled = false;
 			this->button2->Location = System::Drawing::Point(381, 150);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(189, 33);
+			this->button2->Size = System::Drawing::Size(189, 43);
 			this->button2->TabIndex = 6;
 			this->button2->Text = L"œÓ„‡ÒËÚË Á‡·Ó„Ó‚‡ÌÌ≥ÒÚ¸";
 			this->button2->UseVisualStyleBackColor = true;
@@ -304,7 +304,7 @@ namespace testOOPproject {
 			this->button3->Enabled = false;
 			this->button3->Location = System::Drawing::Point(381, 212);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(189, 33);
+			this->button3->Size = System::Drawing::Size(189, 43);
 			this->button3->TabIndex = 7;
 			this->button3->Text = L"œÂÂ‡ıÛ‚‡ÚË ÍÓ¯ÚË Ì‡ ÓÒÓ·ËÒÚËÈ ‡ıÛÌÓÍ";
 			this->button3->UseVisualStyleBackColor = true;
@@ -315,7 +315,7 @@ namespace testOOPproject {
 			// 
 			this->button4->Location = System::Drawing::Point(381, 89);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(189, 33);
+			this->button4->Size = System::Drawing::Size(189, 43);
 			this->button4->TabIndex = 8;
 			this->button4->Text = L"¿ÌÛÎ˛‚‡ÚË ·‡Î‡ÌÒ";
 			this->button4->UseVisualStyleBackColor = true;
@@ -326,7 +326,7 @@ namespace testOOPproject {
 			// 
 			this->button5->Location = System::Drawing::Point(381, 150);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(189, 33);
+			this->button5->Size = System::Drawing::Size(189, 43);
 			this->button5->TabIndex = 9;
 			this->button5->Text = L"œÂÂ‚ÂÒÚË ÍÓ¯ÚË";
 			this->button5->UseVisualStyleBackColor = true;
@@ -337,7 +337,7 @@ namespace testOOPproject {
 			// 
 			this->button6->Location = System::Drawing::Point(381, 212);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(189, 33);
+			this->button6->Size = System::Drawing::Size(189, 43);
 			this->button6->TabIndex = 10;
 			this->button6->Text = L"ŒÚËÏ‡ÚË ÂÍ‚≥ÁËÚË";
 			this->button6->UseVisualStyleBackColor = true;
@@ -346,6 +346,8 @@ namespace testOOPproject {
 			// 
 			// label4
 			// 
+			this->label4->BackColor = System::Drawing::SystemColors::ButtonFace;
+			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9));
 			this->label4->Location = System::Drawing::Point(12, 196);
 			this->label4->Name = L"label4";
@@ -357,36 +359,42 @@ namespace testOOPproject {
 			// 
 			// label5
 			// 
-			this->label5->AutoSize = true;
+			this->label5->BackColor = System::Drawing::SystemColors::Info;
+			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
 			this->label5->Location = System::Drawing::Point(186, 89);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(145, 20);
-			this->label5->TabIndex = 12;
+			this->label5->Size = System::Drawing::Size(172, 61);
+			this->label5->TabIndex = 15;
 			this->label5->Text = L"¬‡¯≥ Á‡ÏÓ‚ÎÂÌÌˇ:";
-			this->label5->TextAlign = System::Drawing::ContentAlignment::TopCenter;
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->label5->Visible = false;
+			this->label5->Click += gcnew System::EventHandler(this, &UserForm::label5_Click);
 			// 
 			// label6
 			// 
-			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::SystemColors::Info;
+			this->label6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->label6->Location = System::Drawing::Point(368, 89);
+			this->label6->Location = System::Drawing::Point(356, 89);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(51, 20);
+			this->label6->Size = System::Drawing::Size(51, 29);
 			this->label6->TabIndex = 13;
 			this->label6->Text = L"label6";
+			this->label6->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->label6->Visible = false;
 			// 
 			// label7
 			// 
-			this->label7->AutoSize = true;
+			this->label7->BackColor = System::Drawing::SystemColors::Info;
+			this->label7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
-			this->label7->Location = System::Drawing::Point(368, 127);
+			this->label7->Location = System::Drawing::Point(356, 118);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(51, 20);
+			this->label7->Size = System::Drawing::Size(51, 32);
 			this->label7->TabIndex = 14;
 			this->label7->Text = L"label7";
+			this->label7->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->label7->Visible = false;
 			// 
 			// button7
@@ -410,6 +418,7 @@ namespace testOOPproject {
 			this->pictureBox2->Size = System::Drawing::Size(29, 29);
 			this->pictureBox2->TabIndex = 16;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &UserForm::pictureBox2_Click);
 			// 
 			// pictureBox3
 			// 
@@ -421,11 +430,22 @@ namespace testOOPproject {
 			this->pictureBox3->TabIndex = 17;
 			this->pictureBox3->TabStop = false;
 			// 
+			// pictureBox4
+			// 
+			this->pictureBox4->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\bg1."
+				L"jpg";
+			this->pictureBox4->Location = System::Drawing::Point(0, 76);
+			this->pictureBox4->Name = L"pictureBox4";
+			this->pictureBox4->Size = System::Drawing::Size(591, 243);
+			this->pictureBox4->TabIndex = 18;
+			this->pictureBox4->TabStop = false;
+			// 
 			// UserForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(591, 319);
+			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button7);
@@ -454,6 +474,7 @@ namespace testOOPproject {
 			this->menuStrip1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -475,5 +496,8 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void ÔÎ‡ÚÂÊ≥ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

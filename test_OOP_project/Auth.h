@@ -201,6 +201,7 @@ namespace testOOPproject {
 		{
 			AdminForm^ admin = gcnew AdminForm();
 			admin->Show();
+
 			textBox1->Clear();
 			maskedTextBox1->Clear();
 		}

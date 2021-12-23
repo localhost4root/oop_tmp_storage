@@ -3,3 +3,4 @@ C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\t
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.UserForm.resources
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\test_OOP_project.vcxproj.GenerateResource.cache
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.Auth.resources
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Debug\testOOPproject.HelpInfo.resources
