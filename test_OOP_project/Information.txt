@@ -2,4 +2,6 @@ Name and surname: Andrew  Martseniuk
 With identification number: Null
 User account #1
 Balance of account: 1000
+User account #2
+Balance of account: 10000
 Balance of credit card: 100  with credit limit: 1000
