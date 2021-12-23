@@ -55,7 +55,7 @@ System::Void testOOPproject::UserForm::êðåäèòíàÊàðòàToolStripMenuItem_Click(Syst
     this->label5->Visible = false;
     this->label6->Visible = false;
     this->label7->Visible = false;
-    this->pictureBox4->Visible = false;
+   /* this->pictureBox4->Visible = false;*/
     
 }
 
@@ -71,7 +71,7 @@ System::Void testOOPproject::UserForm::ðàõóíîêToolStripMenuItem_Click(System::Ob
     this->button7->Visible = false;
     this->label5->Visible = false;
     this->label6->Visible = false;
-    this->pictureBox4->Visible = false;
+ /*   this->pictureBox4->Visible = false;*/
     this->label7->Visible = false;
 }
 
@@ -151,7 +151,7 @@ System::Void testOOPproject::UserForm::ïëàòåæ³ToolStripMenuItem_Click(System::Ob
     this->button5->Visible = false;
     this->button6->Visible = false;
     this->label4->Visible = false;
-    this->pictureBox4->Visible = false;
+ /*   this->pictureBox4->Visible = false;*/
 }
 
 System::Void testOOPproject::UserForm::button7_Click(System::Object^ sender, System::EventArgs^ e)

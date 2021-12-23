@@ -126,8 +126,9 @@ namespace testOOPproject {
 			// label1
 			// 
 			this->label1->AutoSize = true;
+			this->label1->BackColor = System::Drawing::SystemColors::Menu;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-			this->label1->Location = System::Drawing::Point(500, 44);
+			this->label1->Location = System::Drawing::Point(490, 32);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(38, 17);
 			this->label1->TabIndex = 0;
@@ -136,13 +137,14 @@ namespace testOOPproject {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->pictureBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->pictureBox1->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\exit"
 				L"_icon.jpg";
-			this->pictureBox1->Location = System::Drawing::Point(9, 44);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(0);
+			this->pictureBox1->Location = System::Drawing::Point(12, 32);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(35, 29);
+			this->pictureBox1->Size = System::Drawing::Size(27, 29);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &UserForm::pictureBox1_Click);
@@ -413,9 +415,9 @@ namespace testOOPproject {
 			// 
 			this->pictureBox2->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\info"
 				L"_icon.jpg";
-			this->pictureBox2->Location = System::Drawing::Point(61, 44);
+			this->pictureBox2->Location = System::Drawing::Point(63, 32);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(29, 29);
+			this->pictureBox2->Size = System::Drawing::Size(27, 29);
 			this->pictureBox2->TabIndex = 16;
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &UserForm::pictureBox2_Click);
@@ -424,9 +426,9 @@ namespace testOOPproject {
 			// 
 			this->pictureBox3->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\info"
 				L"rmation (1).png";
-			this->pictureBox3->Location = System::Drawing::Point(109, 44);
+			this->pictureBox3->Location = System::Drawing::Point(111, 32);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(30, 29);
+			this->pictureBox3->Size = System::Drawing::Size(27, 29);
 			this->pictureBox3->TabIndex = 17;
 			this->pictureBox3->TabStop = false;
 			// 
@@ -434,10 +436,10 @@ namespace testOOPproject {
 			// 
 			this->pictureBox4->ImageLocation = L"C:\\Users\\Voitsehovskuy-PC\\source\\repos\\test_OOP_project\\test_OOP_project\\img\\bg1."
 				L"jpg";
-			this->pictureBox4->Location = System::Drawing::Point(0, 76);
+			this->pictureBox4->Location = System::Drawing::Point(0, 77);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(591, 243);
-			this->pictureBox4->TabIndex = 18;
+			this->pictureBox4->TabIndex = 1;
 			this->pictureBox4->TabStop = false;
 			// 
 			// UserForm
@@ -445,7 +447,6 @@ namespace testOOPproject {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(591, 319);
-			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button7);
@@ -464,6 +465,7 @@ namespace testOOPproject {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->menuStrip1);
+			this->Controls->Add(this->pictureBox4);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"UserForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
