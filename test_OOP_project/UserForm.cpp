@@ -121,18 +121,25 @@ System::Void testOOPproject::UserForm::button2_Click(System::Object^ sender, Sys
 
 System::Void testOOPproject::UserForm::button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    if (abs((stoi((a.getCCBal()))) - 100 )!=a.getCCLImit())
+    if ((a.isMyCCblocked()==false))
     {
-        a.withdrawMoneYCC(100);
-        a.addMoneyAccount(100);
-        MessageBox::Show("You succesfully payed money from your credit card", "Successfull");
-        label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
-        label2->Text = "Баланс Вашої кредитної карти: " + gcnew System::String((a.getCCBal()).c_str());
+        if ((abs((stoi((a.getCCBal()))) - 100) != a.getCCLImit()))
+        {
+            a.withdrawMoneYCC(100);
+                a.addMoneyAccount(100);
+                MessageBox::Show("You succesfully payed money from your credit card", "Successfull");
+                label4->Text = "Баланс вашого рахунку: " + gcnew System::String((a.getAccountBal()).c_str());
+                label2->Text = "Баланс Вашої кредитної карти: " + gcnew System::String((a.getCCBal()).c_str());
 
+        }
+        else
+        {
+            MessageBox::Show("Your payment was not succesfull(Credit limit)", "Payment");
+        }
     }
     else
     {
-        MessageBox::Show("Your payment was not succesfull(Credit limit)", "Payment");
+        MessageBox::Show("Your payment was not succesfull(Credit card is blocked)", "Payment");
     }
 }
 

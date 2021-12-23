@@ -31,6 +31,10 @@ bool User::CheckMyCC()
 {
 	return CC[0].checkCC();
 }
+bool User::isMyCCblocked()
+{
+	return CC[0].isMyCCblocked_();
+}
 bool User::Payment(double sum)
 {
 	if (accounts[0].getMyBalance() - sum < 0)

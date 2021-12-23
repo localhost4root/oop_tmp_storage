@@ -11,15 +11,7 @@ void Credit_card::addAccount(Account* account)
 }
 void Credit_card::blockCC()
 {
-	if (is_my_CC_blocked == true)
-	{
-		cout << "Your CC is already blocked!";
-	}
-	else
-	{
-		is_my_CC_blocked = false;
-		cout << "Your credit card has been successfully blocked!";
-	}
+	is_my_CC_blocked = true;
 	
 }
 string Credit_card::getMyCCBalance()
@@ -43,6 +35,10 @@ void Credit_card::payToCC(double sum)
 {
 	balance += (int)round(sum);
 	
+}
+bool Credit_card::isMyCCblocked_()
+{
+	return is_my_CC_blocked;
 }
 double Credit_card::getLimit()
 {

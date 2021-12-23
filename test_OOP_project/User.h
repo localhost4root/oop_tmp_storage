@@ -59,6 +59,7 @@ public:
     string getAccountBal();
     void ResetBalance();
     bool CheckMyCC();
+    bool isMyCCblocked();
     bool Payment(double sum);
     void BlockUnblockCC();
     bool payToCC(double sum);

@@ -1,7 +1,5 @@
-﻿  AdminForm.cpp
+﻿  Credit_card.cpp
 C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\User.h(41,13): warning C4101: tmp: неиспользованная локальная переменная
-  Auth.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Auth.cpp(9,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  Создание кода...
+C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\test_OOP_project\Credit_card.cpp(24,16): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
   Account.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   test_OOP_project.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\test_OOP_project\Debug\test_OOP_project.exe

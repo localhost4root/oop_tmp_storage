@@ -2,6 +2,7 @@
 #include "User.h"
 #include "Administrator.h"
 #include "Account.h"
+#include "HelpInfo.h"
 static User a("Andrew", "Martseniuk", "2");
 static Administrator admin("Admin_name", "Admin_surname", "543");
 static Account a2(2, 10000);
@@ -71,5 +72,7 @@ System::Void testOOPproject::AdminForm::button7_Click(System::Object^ sender, Sy
 
 System::Void testOOPproject::AdminForm::pictureBox2_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    
+    HelpInfo^ info = gcnew HelpInfo();
+    info->Show();
+    this->Hide();
 }

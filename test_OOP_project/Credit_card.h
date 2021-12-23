@@ -24,6 +24,7 @@ public:
 	void blockCC();
 	bool checkCC();
 	void payToCC(double sum);
+	bool isMyCCblocked_();
 	double getLimit();
 	string getMyCCBalance();
 	void withdrawMoney(double sum);
